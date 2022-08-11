@@ -1,1 +1,12 @@
 /* styles go here */
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-button {
+  margin-top: 20px;
+}
+
+.field-set {
+  margin-bottom: 20px;
+}
