@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
       <fieldset class="field-set">
@@ -21,7 +22,10 @@
           <input
             type="text"
             id="surname"
-            name="surname">
+            name="surname"
+            autocomplete="off"
+          >
+
         </div>
 
         <div class="form-field">
@@ -30,7 +34,8 @@
             type="text"
             id="name"
             name="name"
-            >
+            autocomplete="off"
+          >
         </div>
 
         <div class="form-field">
@@ -43,7 +48,7 @@
             max="100"
             value="12"
             autocomplete="off"
-            >
+          >
         </div>
 
         <div class="form-field">
@@ -52,7 +57,7 @@
             type="date"
             id="birth"
             name="birth"
-            >
+          >
         </div>
 
         <div class="form-label">
@@ -61,7 +66,7 @@
             type="checkbox"
             id="terms"
             name="terms"
-            >
+          >
         </div>
       </fieldset>
 
@@ -75,6 +80,7 @@
             id="email"
             name="email"
             placeholder="email@example.com"
+            required
           >
         </div>
 
@@ -100,6 +106,7 @@
             <input
             type="radio"
             name="radioGroup"
+            value="yes"
             >
           Yes
           </label>
@@ -108,6 +115,7 @@
             <input
             type="radio"
             name="radioGroup"
+            value="no"
             >
           No
           </label>
@@ -139,9 +147,9 @@
         <div class="form-field">
           <label for="cars">What are your favorite brand of cars?</label>
           <select
-              name="cars"
-              id="cars"
-              multiple
+            name="cars"
+            id="cars"
+            multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -173,7 +181,7 @@
 
         <div>
           <label for="recommend">
-           Would you recommend us?
+          Would you recommend us?
           </label>
           <select name="recommend" id="recommend">
             <option value="yes">yes</option>
@@ -184,14 +192,12 @@
       </fieldset>
 
       <button
-      type="submit"
-      class="form-button"
+        type="submit"
+        class="form-button"
       >
       Submit
       </button>
     </form>
-
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
